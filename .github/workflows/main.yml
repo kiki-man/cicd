@@ -23,8 +23,8 @@ jobs:
       run: mkdir -p deploy
         
     # 파일 복사
-    - name: Copy Jar
-      run: cp ./*.* ./deploy
+    - name: Copy 
+      run: cp ./* ./deploy
 
     - name: Make zip file
       run: zip -r ./test-app.zip ./deploy
