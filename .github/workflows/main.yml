@@ -24,7 +24,7 @@ jobs:
         
     # 파일 복사
     - name: Copy 
-      run: cp -p ./* ./deploy
+      run: cp -R ./* ./deploy
 
     - name: Make zip file
       run: zip -r ./test-app.zip ./deploy
